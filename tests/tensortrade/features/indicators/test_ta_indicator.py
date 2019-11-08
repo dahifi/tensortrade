@@ -42,13 +42,6 @@ class TestTAIndicator:
         assert 'rsi' in data_frame.columns
         print(data_frame.rsi)
 
-    def test_add_volatility_ta(self, data_frame):
-        test_feature = TAIndicator('add_volatility_ta')
-        print(test_feature._indicator_names)
-        test_feature.transform(data_frame, None)
-        print(data_frame.columns)
-        print(data_frame.dtypes)
-
 
 
 
